@@ -1,17 +1,18 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.controller;
+package com.microservicios.funcionalidad.controller;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.service.IFuncionalidadService;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.service.IPermisoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@RequestMapping("/permiso")
 @RestController
-public class FuncionalidadController {
+public class PermisoController {
 
     @Autowired
-    private IFuncionalidadService funcionalidad_serv;
+    private IPermisoService permiso_serv;
 
     // Insertar
     @PostMapping("/nuevo")

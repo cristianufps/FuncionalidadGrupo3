@@ -1,6 +1,6 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.repository;
+package com.microservicios.funcionalidad.model.repository;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

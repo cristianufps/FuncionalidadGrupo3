@@ -1,14 +1,13 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.controller;
+package com.microservicios.funcionalidad.controller;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.service.IPerfilService;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.service.IPerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.Path;
-
+@RequestMapping("/perfil")
 @RestController
 public class PerfilController {
 

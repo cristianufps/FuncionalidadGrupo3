@@ -1,6 +1,6 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.service;
+package com.microservicios.funcionalidad.model.service;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
 
 import java.util.Optional;
 

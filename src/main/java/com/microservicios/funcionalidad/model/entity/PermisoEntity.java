@@ -1,4 +1,4 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity;
+package com.microservicios.funcionalidad.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;

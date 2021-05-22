@@ -1,7 +1,7 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.service;
+package com.microservicios.funcionalidad.model.service;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PermisoEntity;
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.repository.PermisoRepository;
+import com.microservicios.funcionalidad.model.entity.PermisoEntity;
+import com.microservicios.funcionalidad.model.repository.PermisoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity;
+package com.microservicios.funcionalidad.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,8 +9,8 @@ import javax.validation.constraints.NotEmpty;
 @Getter
 @Setter
 @Entity
-@Table(name="profiles")
-public class PerfilEntity {
+@Table(name="functionalities")
+public class FuncionalidadEntity {
 
     private static final long serialVersionUID = 1L;
 
@@ -19,12 +19,17 @@ public class PerfilEntity {
     private Long id;
 
     @NotEmpty
+    private String nombre;
+
+    @NotEmpty
     private String descripcion;
 
-    public PerfilEntity () {}
+    public FuncionalidadEntity () {}
 
-    public PerfilEntity (Long id, String descripcion) {
+    public FuncionalidadEntity (Long id, String nombre, String descripcion) {
         this.id = id;
+        this.nombre = nombre;
         this.descripcion = descripcion;
     }
+
 }
