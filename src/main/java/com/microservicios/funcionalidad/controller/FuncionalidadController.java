@@ -1,32 +1,30 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.controller;
+package com.microservicios.funcionalidad.controller;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.service.IPerfilService;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.service.IFuncionalidadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.Path;
-
+@RequestMapping("/funcionalidad")
 @RestController
-public class PerfilController {
+public class FuncionalidadController {
 
     @Autowired
-    private IPerfilService perfil_service;
+    private IFuncionalidadService funcionalidadService;
 
     // Insertar
     @PostMapping("/nuevo")
-    public ResponseEntity<?> crear (@RequestBody PerfilEntity profile){
-        PerfilEntity perfil_bd = perfil_service.save(profile);
-        return ResponseEntity.status(HttpStatus.CREATED).body(perfil_bd);
+    public ResponseEntity<?> crear (@RequestBody PerfilEntity perfil){
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     //Listar
     @GetMapping("/listar")
-    public ResponseEntity<?> listar () { return ResponseEntity.ok().body(perfil_service.findAll()); }
+    public ResponseEntity<?> listar () { return ResponseEntity.ok().build(); }
 
-    // Eliminar - PENDIENTE
+    // Eliminar
     @DeleteMapping("/{id}")
     public ResponseEntity<?> eliminar (@PathVariable String identificador) {
         return ResponseEntity.ok().build();

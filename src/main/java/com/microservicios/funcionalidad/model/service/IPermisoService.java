@@ -1,6 +1,6 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.service;
+package com.microservicios.funcionalidad.model.service;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PermisoEntity;
+import com.microservicios.funcionalidad.model.entity.PermisoEntity;
 
 import java.util.Optional;
 

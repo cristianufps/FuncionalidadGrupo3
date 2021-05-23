@@ -1,11 +1,15 @@
-package com.microservicios.funcionalidad.microserviciofuncionalidad.model.service;
+package com.microservicios.funcionalidad.model.service;
 
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.entity.PerfilEntity;
-import com.microservicios.funcionalidad.microserviciofuncionalidad.model.repository.PerfilRepository;
+import com.microservicios.funcionalidad.model.entity.PerfilEntity;
+import com.microservicios.funcionalidad.model.repository.PerfilRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+@Service
+@Transactional
 public class PerfilServiceImplement implements IPerfilService {
 
     @Autowired
