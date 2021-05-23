@@ -19,12 +19,16 @@ public class PerfilEntity {
     private Long id;
 
     @NotEmpty
+    private String name;
+
+    @NotEmpty
     private String descripcion;
 
     public PerfilEntity () {}
 
-    public PerfilEntity (Long id, String descripcion) {
+    public PerfilEntity (Long id, String name, String descripcion) {
         this.id = id;
+        this.name = name;
         this.descripcion = descripcion;
     }
 }

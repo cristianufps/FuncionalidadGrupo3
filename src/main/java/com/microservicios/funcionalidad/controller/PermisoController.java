@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class PermisoController {
 
     @Autowired
-    private IPermisoService permiso_serv;
+    private IPermisoService permisoServ;
 
     // Insertar
     @PostMapping("/nuevo")

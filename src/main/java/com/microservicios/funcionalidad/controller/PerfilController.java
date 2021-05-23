@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.*;
 public class PerfilController {
 
     @Autowired
-    private IPerfilService perfil_service;
+    private IPerfilService perfilService;
 
     // Insertar
     @PostMapping("/nuevo")
     public ResponseEntity<?> crear (@RequestBody PerfilEntity profile){
-        PerfilEntity perfil_bd = perfil_service.save(profile);
+        PerfilEntity perfil_bd = perfilService.save(profile);
         return ResponseEntity.status(HttpStatus.CREATED).body(perfil_bd);
     }
 
     //Listar
     @GetMapping("/listar")
-    public ResponseEntity<?> listar () { return ResponseEntity.ok().body(perfil_service.findAll()); }
+    public ResponseEntity<?> listar () { return ResponseEntity.ok().body(perfilService.findAll()); }
 
     // Eliminar - PENDIENTE
     @DeleteMapping("/{id}")

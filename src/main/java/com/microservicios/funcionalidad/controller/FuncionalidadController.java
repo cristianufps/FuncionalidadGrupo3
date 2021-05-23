@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class FuncionalidadController {
 
     @Autowired
-    private IFuncionalidadService funcionalidad_serv;
+    private IFuncionalidadService funcionalidadService;
 
     // Insertar
     @PostMapping("/nuevo")
